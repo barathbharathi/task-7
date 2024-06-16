@@ -1,53 +1,21 @@
-body {
-    background-color: #dce0db;
-}
-
-header h1 {
-    font-size: 1.5rem;
-    margin: 0;
-}
-
-.profile-picture, .search-bar, .repo, .main-content {
-    background-color: #343a40;
+.form-container {
+    max-width: 800px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
     border-radius: 10px;
 }
-
-.profile-picture {
-    height: 450px;
-    width: 95%;
-    background-color: #383838;
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
 }
-
-.search-bar {
-    width: 80%;
-    max-width: 600px;
-}
-
-.search-bar .form-control {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    border: none;
-    background-color: #383838;
-    color: #fff;
-}
-
-.repo {
-    height: 130px;
-    width: 100%;
-    padding: 50px;
+.image-placeholder {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    display: flex;
     align-items: center;
-    background-color: #383838;
-}
-
-.main-content {
-    height: 200px;
-    width: 100%;
-    max-width: 1200px;
-    background-color: #383838;
-}
-
-.centerAdjust {
-    width: 100%;
-    max-width: 1200px;
+    justify-content: center;
+    border-radius: 50%;
+    margin: auto;
 }

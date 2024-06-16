@@ -3,52 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Profile Page Design</title>
-    <!-- Bootstrap CSS -->
+    <title>Event Registration</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <header class="text-center py-3 bg-dark text-white">
-            <h1>GITHUB</h1>
-        </header>
-        <div class="row mt-4">
-            <div class="col-md-3 col-12">
-                <div class="profile-picture"></div>
-            </div>
-            <div class="col-md-9 col-12">
-                <div class="d-flex justify-content-center mb-3">
-                    <div class="search-bar">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
+    <div class="container form-container">
+        <h2 class="form-title">Event 1</h2>
+        <p class="text-center">Number of available seats: 23</p>
+        <form>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="image-placeholder">Image</div>
                 </div>
-                <div class="d-flex justify-content-center mb-3">
-                <div class="centerAdjust">
-                <div class="row">
-                    <div class="col-md-4 col-12 mb-3">
-                        <div class="repo"></div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
                     </div>
-                    <div class="col-md-4 col-12 mb-3">
-                        <div class="repo"></div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
                     </div>
-                    <div class="col-md-4 col-12 mb-3">
-                        <div class="repo"></div>
+                    <div class="form-group">
+                        <label for="phone">Phone No.:</label>
+                        <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
                     </div>
+                    <div class="form-group">
+                        <label for="seats">Number of seats:</label>
+                        <select class="form-control" id="seats">
+                            <option>1</option>
+                            <option selected>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="attendee2">Name of Attendee 2:</label>
+                        <input type="text" class="form-control" id="attendee2" placeholder="Enter the name of second attendee">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary">Cancel</button>
                 </div>
             </div>
-            </div>
-            <div class="d-flex justify-content-center mb-4">
-                <div class="main-content"></div>
-            </div>
-            </div>
-        </div>
+        </form>
     </div>
-
-    <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
